@@ -105,16 +105,16 @@
         });
         
         
-        var output = "";
-        for (var x = 0; x < stocks.length; x++) {
-            if (x === 0 ) {
-                output += "<div class='row'>";
-            }
-            output += "<div class='col-md-2 well well-sm'>" + stocks[x] + "<i class='fa fa-times'></i></div>";
-            if ((x !== 0 ) || x === stocks.length -1) {
-                output += "</div>";
-            }
-        }
+        // var output = "";
+        // for (var x = 0; x < stocks.length; x++) {
+        //     if (x === 0 ) {
+        //         output += "<div class='row'>";
+        //     }
+        //     output += "<div class='col-md-2 well well-sm'>" + stocks[x] + "<i class='fa fa-times'></i></div>";
+        //     if ((x !== 0 ) || x === stocks.length -1) {
+        //         output += "</div>";
+        //     }
+        // }
 
         $("#stocks").html(output);
 
