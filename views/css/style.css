@@ -1,0 +1,39 @@
+
+<style>
+body{
+	background-color: #e7dec9;
+}
+.col-md-2 {
+    margin: 5px;
+}
+
+.fa-times {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+#linechart_material {
+    margin: auto;
+}
+
+
+.container {
+    margin-top: 50px;
+
+
+}
+
+.row {
+    padding: 10px;
+   
+}
+
+#stocks {
+    padding-top: 10px;
+}
+</style>
+
+<script>
+        
+</script>
