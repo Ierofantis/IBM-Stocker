@@ -74,7 +74,9 @@
                     series: seriesOptions
                 });
             }
-    
+            
+        
+        
             $.each(names, function (i, name) {
 
                 var todaysDate = new Date();
@@ -104,19 +106,7 @@
             });
         });
         
-        
-         var result = "";
-         for (var i = 0; i < stocks.length; i++) {
-           if (i === 0 ) {
-                 result += "<div class='row'>";
-            }
-          result += "<div class='col-md-2 well well-sm'>" + stocks[i] + "<i class='fa fa-times'></i></div>";
-            if ((i !== 0 ) || i === stocks.length -1) {
-                result += "</div>";
-            }
-        }
-
-        $("#stocks").html(result);
+    
 
                
            Highcharts.theme = {
@@ -370,6 +360,20 @@
         var highchartsOptions = Highcharts.setOptions(Highcharts.theme);
                 
             })
+            
+         var result = "";
+         for (var i = 0; i < stocks.length; i++) {
+           if (i === 0 ) {
+                 result += "<div class='row'>";
+            }
+          result += "<div class='col-md-2 well well-sm'>" + stocks[i] + "<i class='fa fa-times'></i></div>";
+            if ((i !== 0 ) || i === stocks.length -1) {
+                result += "</div>";
+            }
+        }
+
+        $("#stocks").html(result);
+        
 	</script>  
   </body>
 </html>
