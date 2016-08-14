@@ -105,18 +105,18 @@
         });
         
         
-        // var output = "";
-        // for (var x = 0; x < stocks.length; x++) {
-        //     if (x === 0 ) {
-        //         output += "<div class='row'>";
-        //     }
-        //     output += "<div class='col-md-2 well well-sm'>" + stocks[x] + "<i class='fa fa-times'></i></div>";
-        //     if ((x !== 0 ) || x === stocks.length -1) {
-        //         output += "</div>";
-        //     }
-        // }
+         var result = "";
+         for (var i = 0; i < stocks.length; i++) {
+           if (i === 0 ) {
+                 result += "<div class='row'>";
+            }
+          result += "<div class='col-md-2 well well-sm'>" + stocks[i] + "<i class='fa fa-times'></i></div>";
+            if ((i !== 0 ) || i === stocks.length -1) {
+                result += "</div>";
+            }
+        }
 
-        $("#stocks").html(output);
+        $("#stocks").html(result);
 
                
            Highcharts.theme = {
