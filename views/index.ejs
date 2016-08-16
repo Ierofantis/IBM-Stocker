@@ -79,14 +79,9 @@
         
             $.each(names, function (i, name) {
 
-                var todaysDate = new Date();
-
-                var lastWeeksDate = new Date(todaysDate);
-
-                lastWeeksDate.setDate(todaysDate.getDate() - 400);
-
-                var today = todaysDate.getFullYear() + "-" + (("0" + (todaysDate.getMonth() + 1)).slice(-2)) + "-" + ("0" + todaysDate.getDate()).slice(-2);
-                var lastWeek = lastWeeksDate.getFullYear() + "-" + (("0" + (lastWeeksDate.getMonth() + 1)).slice(-2)) + "-" + ("0" + lastWeeksDate.getDate()).slice(-2);
+                //var name = name;
+                //var lastWeek = lastWeek;
+                //var today = today;
 
                 $.getJSON("https://www.quandl.com/api/v3/datasets/WIKI/" + name + ".json?column_index=4&order=asc&collapse=daily&start_date=" + lastWeek + "&end_date=" + today + "&api_key=xZMzAPer5nFGRHnFg9ds",    function (data) {
                     var dataSet = data.dataset.data;
@@ -106,9 +101,7 @@
             });
         });
         
-    
-
-               
+           /////////////////////////////////////////////////Theme//////////////////////////////////////////////////////////////
            Highcharts.theme = {
           colors: ["#DDDF0D", "#55BF3B", "#DF5353", "#7798BF", "#aaeeee", "#ff0066", "#eeaaee",
             "#55BF3B", "#DF5353", "#7798BF", "#aaeeee"],
@@ -360,6 +353,8 @@
         var highchartsOptions = Highcharts.setOptions(Highcharts.theme);
                 
             })
+            
+         //buttons
             
          var result = "";
          for (var i = 0; i < stocks.length; i++) {
